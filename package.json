@@ -12,7 +12,12 @@
     "name": "Rakov",
     "email": "grunmouse@mail.ru"
   },
+  "scripts": {
+    "test": "mocha test"
+  },
   "license": "MIT",
-  "dependencies": {},
+  "devDependencies": {
+    "sinon": "^9.0.1"
+  },
   "dev": true
 }

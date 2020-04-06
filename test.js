@@ -1,5 +1,5 @@
 var assert = require('assert');
-var Hub = require('@rakov/hub');
+var Hub = require('./index.js');
 var sinon = require('sinon');
 describe('Hub Test', function(){
     describe('Hub Implementation', function() {

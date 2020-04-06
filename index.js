@@ -1,13 +1,12 @@
 class Hub {
 	constructor(){
 		this._callbacks = {};
-		this._uid=0;
 	}
 	
 	sub(event, cb) {
 		var me = this, callbacks = me._callbacks,
 			list = callbacks[event],
-			uid = me._uid++;
+			uid = Symbol();
 		if(list === undefined) {
 			callbacks[event] = list = new Map();
 		}
